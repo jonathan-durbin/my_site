@@ -20,4 +20,21 @@ tags:
 <pre class="r"><code>ggplot(mtcars) +
   geom_point(aes(x=mpg, y=wt, size=hp))</code></pre>
 <p><img src="/post/2018-11-17-test-rmarkdown-file_files/figure-html/first_graph-1.png" width="480" /></p>
+<pre class="r"><code># gcd - r version
+gcd &lt;- function(a,b) {
+  if (b == 0) {
+    return(abs(a))
+  } else {
+    return(gcd(b, a %% b))
+  }
+}
+c(gcd(5,16),gcd(5,15))</code></pre>
+<pre><code>## [1] 1 5</code></pre>
+<p>I can put python scripts here too!</p>
+<pre class="python"><code>def gcd(a, b):
+  if b == 0:
+    return a
+  else:
+    return gcd(b, a % b)
+gcd(5,16)</code></pre>
 </div>

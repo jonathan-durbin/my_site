@@ -12,8 +12,10 @@ tags:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(cache=TRUE, echo=TRUE, fig.asp=0.68)
+knitr::opts_chunk$set(echo=TRUE, fig.asp=0.68)
 library(tidyverse)
+library(reticulate)
+use_python("/usr/bin/python3")
 ```
 
 ## My first page!
@@ -25,5 +27,28 @@ Look at this graph
 ```{r first_graph, fig.width=5}
 ggplot(mtcars) +
   geom_point(aes(x=mpg, y=wt, size=hp))
+
+# gcd - r version
+gcd <- function(a,b) {
+  if (b == 0) {
+    return(abs(a))
+  } else {
+    return(gcd(b, a %% b))
+  }
+}
+c(gcd(5,16),gcd(5,15))
+
+```
+
+I can put python scripts here too!
+
+```{python using_python}
+def gcd(a, b):
+  if b == 0:
+    return a
+  else:
+    return gcd(b, a % b)
+
+gcd(5,16)
 ```
 
