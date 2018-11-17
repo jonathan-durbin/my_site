@@ -12,10 +12,11 @@ tags:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo=TRUE, fig.asp=0.68)
+knitr::opts_chunk$set(cache = TRUE, echo=TRUE, fig.asp=0.68)
 library(tidyverse)
 library(reticulate)
 use_python("/usr/bin/python3")
+knitr::knit_engines$set(python = reticulate::eng_python)
 ```
 
 ## My first page!
@@ -48,7 +49,19 @@ def gcd(a, b):
     return a
   else:
     return gcd(b, a % b)
+  
+print(gcd(5,16), gcd(5,15))
+```
+NOTE TO SELF:
 
-gcd(5,16)
+  * Set the chunk options for a python chunk like `{python <CHUNK_NAME>}`. In the setup chunk, use the following lines:
+
+```
+library(reticulate)
+
+# this option may not be necessary, but it makes me feel more confident
+use_python("/usr/bin/python3")
+
+knitr::knit_engines$set(python = reticulate::eng_python)
 ```
 

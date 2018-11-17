@@ -1,3 +1,4 @@
 # exclude public directory
 public/
 .Rproj.user/
+.Rproj.user

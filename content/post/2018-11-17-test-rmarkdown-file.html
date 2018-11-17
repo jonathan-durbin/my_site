@@ -36,5 +36,17 @@ c(gcd(5,16),gcd(5,15))</code></pre>
     return a
   else:
     return gcd(b, a % b)
-gcd(5,16)</code></pre>
+  
+print(gcd(5,16), gcd(5,15))</code></pre>
+<pre><code>## 1 5</code></pre>
+<p>NOTE TO SELF:</p>
+<ul>
+<li>Set the chunk options for a python chunk like <code>{python &lt;CHUNK_NAME&gt;}</code>. In the setup chunk, use the following lines:</li>
+</ul>
+<pre><code>library(reticulate)
+
+# this option may not be necessary, but it makes me feel more confident
+use_python(&quot;/usr/bin/python3&quot;)
+
+knitr::knit_engines$set(python = reticulate::eng_python)</code></pre>
 </div>
