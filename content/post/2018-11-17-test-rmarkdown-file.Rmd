@@ -1,0 +1,29 @@
+---
+title: Test Rmarkdown File
+author: Jon Durbin
+date: '2018-11-17'
+slug: test-rmarkdown-file
+categories:
+  - R
+  - Rmarkdown
+tags:
+  - plot
+  - ggplot
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=TRUE, echo=TRUE, fig.asp=0.68)
+library(tidyverse)
+```
+
+## My first page!
+
+**I have my own website now**
+
+Look at this graph
+
+```{r first_graph, fig.width=5}
+ggplot(mtcars) +
+  geom_point(aes(x=mpg, y=wt, size=hp))
+```
+
