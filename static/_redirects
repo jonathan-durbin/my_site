@@ -1,3 +1,6 @@
-# redirect from http of my old dimain to https of my custom domain
+# redirect from http of my old domain to https of my custom domain
 http://silly-varahamihira-e33c6a.netlify.com/* https://jonathan-durbin.rbind.io/:splat 301!
 http:://jonathan-durbin.rbind.io/* https://jonathan-durbin.rbind.io/:splat 301!
+
+# Redirect default Netlify subdomain to primary domain
+http://silly-varahamihira-e33c6a.netlify.com/* http://jonathan-durbin.rbind.io/:splat 301!
