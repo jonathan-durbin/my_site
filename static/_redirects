@@ -1,4 +1,5 @@
 # redirect from http of my old domain to https of my custom domain
-http://silly-varahamihira-e33c6a.netlify.com/* https://jonathan-durbin.rbind.io/:splat 301!
+http://silly-varahamihira-e33c6a.netlify.com/*  https://jonathan-durbin.rbind.io/:splat 301!
 
-http://jonathan-durbin.rbind.io/* https://jonathan-durbin.rbind.io/:splat 301!
+# redirects from an insecure version to a secure version
+http://jonathan-durbin.rbind.io/* 		https://jonathan-durbin.rbind.io/:splat 301!
