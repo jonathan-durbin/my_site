@@ -1,0 +1,2 @@
+# redirect from http of my old dimain to https of my custom domain
+http://silly-varahamihira-e33c6a.netlify.com/* https://jonathan-durbin.rbind.io/:splat 301!
