@@ -1,6 +1,8 @@
 # exclude public directory
 public/
+# exclude unnecessary files
 .Rproj.user/
 .Rproj.user
 c_a_p.sh
 .Rhistory
+blogdown

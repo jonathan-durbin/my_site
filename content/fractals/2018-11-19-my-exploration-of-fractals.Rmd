@@ -1,0 +1,14 @@
+---
+title: My Exploration Of Fractals
+author: Jon Durbin
+date: '2018-11-19'
+slug: my-exploration-of-fractals
+categories:
+  - R
+  - python
+tags:
+  - fractals
+  - julia sets
+  - mandelbrot set
+---
+
