@@ -13,14 +13,18 @@ tags:
 ---
 
 ```{r setup, include = FALSE}
-library(knitr)
+knitr::opts_chunk$set(cache=TRUE, echo=FALSE)
+library(tidyverse)
 ```
 
+In the fall semester of my junior year of undergrad, I worked with a friend on an independent study about agent-based modeling. I didn't have a lot of programming experience at the time, nor did I want to learn. I simply wasn't interested. We used a software called [NetLogo](https://ccl.northwestern.edu/netlogo/) (good language for agent-based modeling) in our study. My friend, who had a bit more programming experience than I did, realized that this software would be good for generating the [Mandelbrot Set](https://en.wikipedia.org/wiki/Mandelbrot_set) and [Julia Sets](https://en.wikipedia.org/wiki/Julia_set). Below is one Julia Set he generated:
 
-In the fall semester of my junior year of undergrad, I worked with a friend on an independent study about agent-based modeling. I didn't have a lot of programming experience at the time, nor did I want to learn. I simply wasn't interested. We used a software called [NetLogo](https://ccl.northwestern.edu/netlogo/) (good language for agent-based modeling) in our study. My friend, who had a bit more programming experience than I did, realized that this software would be good for generating the Mandelbrot Set and Julia Sets. Below is an image he generated:
-
-```{r julia_example, out.width="50%", echo = FALSE}
-getwd()
-knitr::include_graphics("./images/julia_1.png")
+```{r julia_example, out.width="30%", echo = FALSE}
+knitr::include_graphics(c("/fractals/images/julia_1.png", "/fractals/images/julia_2.png"))
 ```
+
+![An example julia set that was generated with NetLogo](/fractals/2018-11-19-my-exploration-of-fractals_files/julia_1.png){width=50%}
+
+
+Naturally, I became very interested in fractals after I saw this - I copied the code he wrote and excitedly started exploring different Julia Sets even though I didn't have much experience with the code itself. I generated a few more neat looking Julia Sets, (below) but I soon became bored and forgot about the project.
 
