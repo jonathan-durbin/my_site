@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://jonathan.durbin.rbind.io/"
 title = "Jon"
 author = "Jonathan Durbin"
 relativeurls = true
@@ -16,7 +16,7 @@ pygmentscodefences = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
-  sitename = "Just... Jon"
+  sitename = "Just Jon"
 
 [[menu.main]]
     name = "This Site's GitHub"
