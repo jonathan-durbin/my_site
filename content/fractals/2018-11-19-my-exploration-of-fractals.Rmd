@@ -21,17 +21,21 @@ library(grid)
 library(gridExtra)
 ```
 
-In the fall semester of my junior year of undergrad, I worked with a friend on an independent study about agent-based modeling. I didn't have a lot of programming experience at the time, nor did I want to learn. I simply wasn't interested. We used a software called [NetLogo](https://ccl.northwestern.edu/netlogo/) (good language for agent-based modeling) in our study. My friend, who had a bit more programming experience than I did, realized that this software would be good for generating the [Mandelbrot Set](https://en.wikipedia.org/wiki/Mandelbrot_set) and [Julia Sets](https://en.wikipedia.org/wiki/Julia_set). Below is one Julia Set he generated:
+## Background
 
-```{r julia_example, out.width = "30%", echo = FALSE}
+In the fall semester of my junior year of undergrad, I worked with a friend on an independent study about [agent-based modeling](https://en.wikipedia.org/wiki/Agent-based_model). I didn't have a lot of programming experience at the time, nor did I want to learn. I simply wasn't interested. We used a software called [NetLogo](https://ccl.northwestern.edu/netlogo/) (good language for agent-based modeling) in our study. My friend, who had a bit more programming experience than I did, realized that this software would be good for generating the [Mandelbrot Set](https://en.wikipedia.org/wiki/Mandelbrot_set) and [Julia Sets](https://en.wikipedia.org/wiki/Julia_set). Below is one Julia Set he generated:
+
+```{r julia_example, out.width = "60%"}
 knitr::include_graphics("/fractals/images/julia_1.png")
 ```
 
-Naturally, I became very interested in fractals after I saw this; I copied the code he wrote and excitedly started exploring different Julia Sets even though I didn't have much experience with the code itself. I generated a few more neat looking Julia Sets, (below) but I soon became bored and forgot about the project.
+Naturally, I became very interested in fractals after I saw this; I copied the code he wrote and excitedly started exploring different Julia Sets even though I didn't have much experience with the code itself. I generated a few more neat looking Julia Sets for myself! More that I made can be found [here](), I just don't have space for all of them in this article.
 
-```{r my_julia_example, out.width="50%", echo = FALSE}
+```{r my_julia_example}
 img1 <- rasterGrob(as.raster(readPNG("images/julia_2.png")), interpolate = FALSE)
 img2 <- rasterGrob(as.raster(readPNG("images/julia_3.png")), interpolate = FALSE)
-grid.arrange(img1, img2, ncol = 2)
+img3 <- rasterGrob(as.raster(readPNG("images/julia_4.png")), interpolate = FALSE)
+img4 <- rasterGrob(as.raster(readPNG("images/julia_5.png")), interpolate = FALSE)
+grid.arrange(img1, img2, img3, img4, ncol = 2)
 ```
 
