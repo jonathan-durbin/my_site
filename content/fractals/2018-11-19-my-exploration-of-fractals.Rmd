@@ -29,7 +29,7 @@ In the fall semester of my junior year of undergrad, I worked with a friend on a
 knitr::include_graphics("/fractals/images/julia_1.png")
 ```
 
-Naturally, I became very interested in fractals after I saw this; I copied the code he wrote and excitedly started exploring different Julia Sets even though I didn't have much experience with the code itself. I generated a few more neat looking Julia Sets for myself! More that I made can be found [here](), I just don't have space for all of them in this article.
+Naturally, I became very interested in fractals after I saw this; I copied the code he wrote and excitedly started exploring different Julia Sets even though I didn't have much experience with the code itself. I generated a few more neat looking Julia Sets for myself! More that I made can be found [here](https://github.com/jonathan-durbin/my_site/tree/master/content/fractals/images), I just don't have space for all of them in this article.
 
 ```{r my_julia_example}
 img1 <- rasterGrob(as.raster(readPNG("images/julia_2.png")), interpolate = FALSE)
