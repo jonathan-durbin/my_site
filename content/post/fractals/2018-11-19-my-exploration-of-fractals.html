@@ -3,7 +3,7 @@ title: My Exploration Of Fractals
 author: Jon Durbin
 date: '2018-11-19'
 slug: my-exploration-of-fractals
-draft: FALSE
+draft: TRUE
 categories:
   - R
   - python
@@ -18,12 +18,25 @@ tags:
 <div id="background" class="section level2">
 <h2>Background</h2>
 <p>In the fall semester of my junior year of undergrad, I worked with a friend on an independent study about <a href="https://en.wikipedia.org/wiki/Agent-based_model">agent-based modeling</a>. I didn’t have a lot of programming experience at the time, nor did I want to. We used a software called <a href="https://ccl.northwestern.edu/netlogo/">NetLogo</a> (good language for agent-based modeling) in our study. My friend, who had a bit more programming experience than I did, realized that this software would be good for generating the <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot Set</a> and <a href="https://en.wikipedia.org/wiki/Julia_set">Julia Sets</a>. Below is one Julia Set he generated using NetLogo:</p>
-<p><img src="/fractals/images/julia_1.png" width="60%" /><img src="/fractals/2018-11-19-my-exploration-of-fractals_files/julia_1.png" width="60%" /></p>
+<p><img src="/fractals/2018-11-19-my-exploration-of-fractals_files/julia_1.png" width="60%" /></p>
 <p>Naturally, I became very interested in fractals after I saw this; I copied the code he wrote and excitedly started exploring different Julia Sets even though I didn’t have much experience with the code itself. I generated a few more neat looking Julia Sets for myself! More that I made can be found <a href="https://github.com/jonathan-durbin/my_site/tree/master/content/fractals/images">here</a>, I just don’t have space for all of them in this article.</p>
 <p><img src="/post/fractals/2018-11-19-my-exploration-of-fractals_files/figure-html/my_julia_example-1.png" width="672" /></p>
 <p>If you would like to see the files that generated these fractals, they can be found <a href="https://github.com/jonathan-durbin/my_site/tree/master/content/fractals/scripts">here</a>, but you’ll have to install NetLogo to run them.</p>
 </div>
 <div id="getting-into-it" class="section level2">
 <h2>Getting Into It</h2>
-<p>I get a stronger interest in learning how to code after sompleting the independent study. After some research I decided to learn python for its simplicity and large user base. I learned the algorithm for generating fractals by reading various articles on the Mandelbrot Set and Julia Sets</p>
+<p>I get a stronger interest in learning how to code after completing the independent study. After some research I decided to learn python for its simplicity and large user base. I learned the algorithm for generating these fractals (practically the same algorithm) by reading various articles on the Mandelbrot Set and Julia Sets. I will spend the next section explaining how I understand the algorithm, but these articles may be more helpful to some:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Julia_set#Pseudocode">Wikipedia</a> has some interesting ideas for generating Julia Sets, but it’s also Wikipedia. Somehow incomplete and overcomplicated at the same time.</li>
+<li><a href="https://www.math.univ-toulouse.fr/~cheritat/wiki-draw/index.php/Mandelbrot_set#The_Mandelbrot_set">University of Toulouse</a> I missed this article when I was exploring Julia Sets. Fascinating read! I will definitely go back and read through it again sometime.</li>
+<li><a href="https://kukuruku.co/post/julia-set/">Kukuruku</a> gets into the theory behind the algorithm, which can be helpful.</li>
+</ul>
+<div id="my-understanding" class="section level3">
+<h3>My Understanding</h3>
+<p>The process, as I understand it, is broken up into a few steps.</p>
+<ol style="list-style-type: decimal">
+<li>Create a blank image at the size you want the fractal to be</li>
+<li>Calculate a scale</li>
+</ol>
+</div>
 </div>
